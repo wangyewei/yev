@@ -1,0 +1,37 @@
+{
+  "packageManager": "pnpm@8.15.4",
+  "name": "vitepress-theme-yev",
+  "version": "1.0.0",
+  "description": "A modern blog theme for vitepress",
+  "type": "module",
+  "engines": {
+    "node": ">=18.19.0"
+  },
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "keywords": [
+    "theme",
+    "vitepress",
+    "tailwind",
+    "typescript",
+    "tsx"
+  ],
+  "author": "Yev Wang",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
