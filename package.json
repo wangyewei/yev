@@ -12,9 +12,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "vitepress-theme-yev": "workspace:*"
+  },
   "devDependencies": {
     "@types/node": "^20.12.12",
     "tsup": "^8.0.2",
-    "vitepress": "^1.1.4"
+    "vite": "^5.2.11",
+    "vitepress": "^1.1.4",
+    "vue": "^3.4.27"
   }
 }
