@@ -8,6 +8,7 @@
     "node": ">=18.19.0"
   },
   "exports": "./src/index.ts",
+  "types": "types/index.d.ts",
   "files": [
     "dist",
     "types"
