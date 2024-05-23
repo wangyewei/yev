@@ -17,6 +17,6 @@
     "noUnusedLocals": true,
     "skipLibCheck": true
   },
-  "include": ["src", "./types/shimd.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "*.d.ts"],
   "exclude": ["node_modules", "dist", "node.d.ts"]
 }
