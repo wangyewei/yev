@@ -134,4 +134,4 @@ dist
 .vitepress/cache
 
 #  
- */virtual-tailwind.css
+virtual-tailwind.css
