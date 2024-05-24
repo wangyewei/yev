@@ -3,7 +3,6 @@ import Layout from './app/Layout'
 import DefaultTheme from 'vitepress/theme'
 
 export default {
-  ...DefaultTheme,
   Layout,
   enhanceApp({ app }) {
     /**
