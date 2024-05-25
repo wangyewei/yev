@@ -1,0 +1,3 @@
+[submodule "packages/theme"]
+	path = packages/theme
+	url = https://github.com/wangyewei/vitepress-theme-yev.git

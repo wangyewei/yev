@@ -15,7 +15,7 @@ export default defineComponent({
           <img
             src={theme.value.nav.logo}
             alt="avator"
-            class="ring-2 ring-slate-200 dark:ring-neutral-800 rounded-full"
+            class="ring-2 ring-slate-200 dark:ring-neutral-800"
           />
         </div>
       </div>

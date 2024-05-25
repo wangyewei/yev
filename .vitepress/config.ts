@@ -7,7 +7,7 @@ export default defineConfigWithTheme<VPYevTheme>({
   description: "Yev's personal blog site",
   themeConfig: {
     nav: {
-      logo: 'avatar.png'
+      logo: 'https://avatars.githubusercontent.com/u/49926816?v=4'
     }
   }
 })
