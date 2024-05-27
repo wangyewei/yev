@@ -1,9 +1,28 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+title:
+  template:
+    - text: Hello, I'm
+      type: h1
+      class: font-light text-4xl text-zinc-800 dark:text-zinc-200
+    - text: Yev Wang
+      type: h1
+      class: font-medium mx-2 text-4xl text-zinc-800 dark:text-zinc-200
+    - text: 👋。
+      type: h1
+      class: font-light text-4xl text-zinc-800 dark:text-zinc-200
+    - type: br
+    - text: A NodeJS Full Stack
+      type: h1
+      class: font-light text-4xl text-zinc-800 dark:text-zinc-200
+    - text: <Developer />
+      type: code
+      class: font-medium mx-2 text-4xl rounded p-1 bg-gray-200 dark:bg-gray-800/0 hover:dark:bg-gray-800/100 bg-opacity-0 hover:bg-opacity-100 transition-background duration-200 text-zinc-800 dark:text-zinc-200
+    - type: span
+      class: inline-block w-[1px] h-8 -bottom-2 relative bg-gray-800/80 dark:bg-gray-200/80 opacity-0 group-hover:opacity-100 transition-opacity duration-200 group-hover:animation-blink text-zinc-800 dark:text-zinc-200
 hero:
-  name: "Yev"
+  name: 'Yev'
   text: "Yev's personal blog site"
   tagline: My great project tagline
   actions:
@@ -22,4 +41,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-

@@ -11,17 +11,17 @@ export default defineConfigWithTheme<VPYevTheme>({
       items: [
         { title: '首页', path: '/', icon: 'FaSolidDotCircle' },
         {
-          title: '技术', path: '/techology', children: [
+          title: '技术', path: '/techology', icon: 'FaSolidCode', children: [
             { title: 'typescript', path: '/typescript' },
             { title: 'git', path: '/git' }
           ]
         },
         {
-          title: '手稿', path: '/type', children: [
+          title: '手稿', path: '/type', icon: 'FaFilledQulliPen', children: [
             { title: '三生（上）', path: '/love-3' }
           ]
         },
-        { title: '心绪', path: '/emotions' },
+        { title: '心绪', icon: 'FaSolidEmotion', path: '/emotions/' },
       ]
     }
   }
