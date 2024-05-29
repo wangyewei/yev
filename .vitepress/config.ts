@@ -7,7 +7,7 @@ export default defineConfigWithTheme<VPYevTheme>({
   description: "Yev's personal blog site",
   themeConfig: {
     nav: {
-      logo: '/avatar_2.jpg',
+      logo: '/avatar.jpg',
       items: [
         { title: '首页', path: '/', icon: 'FaSolidDotCircle' },
         {
