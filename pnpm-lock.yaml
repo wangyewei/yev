@@ -30,6 +30,12 @@ importers:
 
   packages/theme:
     dependencies:
+      '@allindevelopers/vue-floating-ui':
+        specifier: ^1.1.1
+        version: 1.1.1(vue@3.4.27)
+      '@floating-ui/vue':
+        specifier: ^1.0.6
+        version: 1.0.6(vue@3.4.27)
       '@vueuse/motion':
         specifier: ^2.1.0
         version: 2.1.0(vue@3.4.27)
@@ -207,6 +213,15 @@ packages:
       '@algolia/logger-common': 4.23.3
       '@algolia/requester-common': 4.23.3
     dev: true
+
+  /@allindevelopers/vue-floating-ui@1.1.1(vue@3.4.27):
+    resolution: {integrity: sha512-VvX0EZi58sT1ARd1Yxw/s7oW8at7dYXZ6/Aq8cSExWOeEOwc7t0IXlHh8fLyLMHqfR81Ko6yyr6r7VlfYgPYyg==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@floating-ui/dom': 0.2.0
+      vue: 3.4.27(typescript@5.4.5)
+    dev: false
 
   /@alloc/quick-lru@5.2.0:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -941,10 +956,20 @@ packages:
     dev: true
     optional: true
 
+  /@floating-ui/core@0.4.0:
+    resolution: {integrity: sha512-99Pnb5T2S7PSE8rKHD5fZWWnXE3a2xG9E8eQm8SIMYWJyJoHDJIt0b9SK3UjetWFcepxVG+ZMDxcfbamyx+HSg==}
+    dev: false
+
   /@floating-ui/core@1.6.2:
     resolution: {integrity: sha512-+2XpQV9LLZeanU4ZevzRnGFg2neDeKHgFLjP6YLW+tly0IvrhqT4u8enLGjLH3qeh85g19xY5rsAusfwTdn5lg==}
     dependencies:
       '@floating-ui/utils': 0.2.2
+    dev: false
+
+  /@floating-ui/dom@0.2.0:
+    resolution: {integrity: sha512-hNhTbImiJ8SH9rHsP0qcE9IVxn/maMhwWA5d17p7EkEzVdciayB664Qy2Vxa8RxY/8avE8iVKkfE8sIeg34J0g==}
+    dependencies:
+      '@floating-ui/core': 0.4.0
     dev: false
 
   /@floating-ui/dom@1.6.5:
