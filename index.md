@@ -3,20 +3,20 @@ layout: home
 
 title:
   template:
-    - text: Hi, I'm
+    - text: 你好，我叫
       type: h1
       class: font-light text-4xl text-zinc-800 dark:text-zinc-200 mr-2
-    - text: Yev Wang
+    - text: 王野未
       type: h1
       class: font-medium mx-2 text-4xl text-zinc-800 dark:text-zinc-200
     - text: 👋。
       type: h1
       class: font-light text-4xl text-zinc-800 dark:text-zinc-200
     - type: br
-    - text: A NodeJS Full Stack
+    - text: 一个 NodeJS 全栈
       type: h1
       class: font-light text-4xl text-zinc-800 dark:text-zinc-200 mr-2
-    - text: <Developer />
+    - text: <前端工程师 />
       type: code
       class: font-medium mx-2 text-4xl rounded p-1 bg-gray-200 dark:bg-gray-800/0 hover:dark:bg-gray-800/100 bg-opacity-0 hover:bg-opacity-100 transition-background duration-200 text-zinc-800 dark:text-zinc-200 mr-2
     - type: span
