@@ -8,7 +8,8 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "theme:dev": "pnpm -F=vitepress-theme-yev dev:tailwind"
+    "theme:dev": "pnpm -F=vitepress-theme-yev dev:tailwind",
+    "theme:build": "pnpm -F=vitepress-theme-yev build"
   },
   "keywords": [],
   "author": "",
