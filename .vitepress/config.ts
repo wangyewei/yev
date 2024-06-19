@@ -14,39 +14,39 @@ export default defineConfigWithTheme<VPYevTheme>({
       logo: '/avatar.jpg',
       items: [
         {
-          title: '首页',
+          title: 'Home',
           path: '/',
           icon: 'FaSolidDotCircle',
           children: [
-            { title: '自述', path: 'en/about/me' },
-            { title: '赞助', path: 'sponsor' }
+            { title: 'Intorduce', path: 'en/about/me' },
+            { title: 'Sponsor Me', path: 'sponsor' }
           ]
         },
         {
-          title: '技术',
+          title: 'Techonologies',
           path: '/techology',
           icon: 'FaSolidCode',
           children: [
             { title: 'TypeScript', path: '/typescript' },
             { title: 'Git', path: '/git' },
             { title: 'GIS', path: '/gis' },
-            { title: '数字孪生', path: '/digi' },
+            { title: 'Digital twin', path: '/digi' },
             { title: 'Vue', path: '/vue' }
           ]
         },
         {
-          title: '手稿',
+          title: 'Manuscripts',
           path: '/type',
           icon: 'FaFilledQulliPen',
-          children: [{ title: '三生（上）', path: '/love-3' }]
+          children: [{ title: 'Talk', path: '/diary' }]
         },
         {
-          title: '心绪',
+          title: 'State Of Mind',
           icon: 'FaSolidEmotion',
           path: '/emotions/',
           children: [
-            { title: '日记', path: '/diary' },
-            { title: '书摘', path: '/excerpt' }
+            { title: 'Diary', path: '/diary' },
+            { title: 'Excerpt', path: '/excerpt' }
           ]
         }
       ]
@@ -54,20 +54,20 @@ export default defineConfigWithTheme<VPYevTheme>({
     footer: {
       links: [
         {
-          name: '关于',
+          name: 'about',
           links: [
-            { name: '关于本站', href: '/abouts/site' },
-            { name: '关于我', href: '/abouts/me' },
+            { name: 'About this site', href: '/abouts/site' },
+            { name: 'About me', href: '/abouts/me' },
             {
-              name: '关于此项目',
+              name: 'About this project',
               href: 'https://github.com/wangyewei/vitepress-theme-yev'
             }
           ]
         },
         {
-          name: '联系',
+          name: 'Contact',
           links: [
-            { name: '邮件', href: 'mailto:yevwang@qq.com' },
+            { name: 'Email', href: 'mailto:yevwang@qq.com' },
             {
               name: 'GitHub',
               href: 'https://github.com/wangyewei'
@@ -75,10 +75,10 @@ export default defineConfigWithTheme<VPYevTheme>({
           ]
         },
         {
-          name: '更多',
+          name: 'More',
           links: [
-            { name: '软件开发', href: 'https://06k4.com' },
-            { name: '行业解决方案', href: 'https://06k4.com' }
+            { name: 'Software development', href: 'https://06k4.com' },
+            { name: 'Industry solutions', href: 'https://06k4.com' }
           ]
         }
       ],
@@ -108,6 +108,11 @@ export default defineConfigWithTheme<VPYevTheme>({
             }
           ],
           className: 'flex items-center gap-[4px] flex-wrap'
+        },
+        {
+          type: 'div',
+          text: 'Licensed Under CC BY-NC-SA 4.0',
+          className: 'block mt-4 text-[12px]'
         }
       ]
     }

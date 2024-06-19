@@ -22,7 +22,7 @@ title:
     - type: span
       class: inline-block w-[1px] h-8 -bottom-2 relative bg-gray-800/80 dark:bg-gray-200/80 opacity-0 group-hover:opacity-100 transition-opacity duration-200 group-hover:animation-blink text-zinc-800 dark:text-zinc-200
 
-motto: 求知若渴，虚心若愚
+motto: Thirsty for knowledge, Humble as a fool.
 
 socials:
     - icon: github
