@@ -1,5 +1,6 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { VPYevTheme } from 'vitepress-theme-yev/src/index.ts'
+import footerTemplate from './footer-template'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme<VPYevTheme>({
@@ -82,38 +83,7 @@ export default defineConfigWithTheme<VPYevTheme>({
           ]
         }
       ],
-      template: [
-        {
-          type: 'small',
-          children: [
-            {
-              type: 'span',
-              text: 'Powerd by Vercel'
-            },
-            {
-              type: 'span',
-              text: '|'
-            },
-            {
-              type: 'span',
-              text: 'Designed by Shiro'
-            },
-            {
-              type: 'span',
-              text: '|'
-            },
-            {
-              type: 'span',
-              text: 'Based on Vitepress-theme-yev | '
-            },
-            {
-              type: 'span',
-              text: 'Licensed Under CC BY-NC-SA 4.0'
-            }
-          ],
-          className: 'flex items-center gap-[4px] flex-wrap'
-        }
-      ]
+      template: footerTemplate
     }
   }
 })

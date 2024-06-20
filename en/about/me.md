@@ -1,4 +1,5 @@
 ---
+meta: true
 title: Hello
 subTitle: My name is Yev Wang
 ---
@@ -13,7 +14,7 @@ Outside of programming, I enjoy coffee (dark roast-only), music, and watching fi
 
 _(?) Aware (~) Familiar (+) Proficient (++) Advanced (\*) Expert_
 
-- Vue 3 (2021) ++\*
+- Vue 3 (2021) ++
 - Vue 2 (2019) ++
 - React (2019) +
 - TypeScript (2020) +
