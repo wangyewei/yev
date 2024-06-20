@@ -1,5 +1,5 @@
 import { defineConfigWithTheme } from 'vitepress'
-import type { VPYevTheme } from 'vitepress-theme-yev'
+import { VPYevTheme } from 'vitepress-theme-yev/src/index.ts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme<VPYevTheme>({
@@ -54,7 +54,7 @@ export default defineConfigWithTheme<VPYevTheme>({
     footer: {
       links: [
         {
-          name: 'about',
+          name: 'About',
           links: [
             { name: 'About this site', href: '/abouts/site' },
             { name: 'About me', href: '/abouts/me' },
@@ -84,10 +84,10 @@ export default defineConfigWithTheme<VPYevTheme>({
       ],
       template: [
         {
-          type: 'span',
+          type: 'small',
           children: [
             {
-              type: 'div',
+              type: 'span',
               text: 'Powerd by Vercel'
             },
             {
@@ -104,15 +104,14 @@ export default defineConfigWithTheme<VPYevTheme>({
             },
             {
               type: 'span',
-              text: 'Based on Vitepress-theme-yev'
+              text: 'Based on Vitepress-theme-yev | '
+            },
+            {
+              type: 'span',
+              text: 'Licensed Under CC BY-NC-SA 4.0'
             }
           ],
           className: 'flex items-center gap-[4px] flex-wrap'
-        },
-        {
-          type: 'div',
-          text: 'Licensed Under CC BY-NC-SA 4.0',
-          className: 'block mt-4 text-[12px]'
         }
       ]
     }
