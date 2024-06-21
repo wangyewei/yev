@@ -1,8 +1,12 @@
 ---
 meta: true
-title: Hello
-subTitle: My name is Yev Wang
+title: Introduce
+subTitle: About me
 ---
+
+## Hello
+
+### My name is Yev Wang
 
 I am ~~a software engineer at [Asiainfo Inc.](https://asiainfo.com)~~ currently open to [job opportunities](mailto:yevwang@qq.com), based in Chengdu, China. My primary skill set encompasses Vue, React, Svelte, Flutter, and TypeScript.
 

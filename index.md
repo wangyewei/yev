@@ -13,7 +13,7 @@ title:
       type: h1
       class: font-light text-4xl text-zinc-800 dark:text-zinc-200
     - type: br
-    - text: A NodeJS Full Stack
+    - text: A Vue Stack Frontend
       type: h1
       class: font-light text-4xl text-zinc-800 dark:text-zinc-200 mr-2
     - text: <Developer />

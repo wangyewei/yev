@@ -19,8 +19,8 @@ export default defineConfigWithTheme<VPYevTheme>({
           path: '/',
           icon: 'FaSolidDotCircle',
           children: [
-            { title: 'Intorduce', path: 'en/about/me' },
-            { title: 'Sponsor Me', path: 'sponsor' }
+            { title: 'Introduce', path: 'en/about/me' }
+            // { title: 'Sponsor Me', path: 'sponsor' }
           ]
         },
         {
