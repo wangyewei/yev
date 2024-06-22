@@ -6,6 +6,7 @@ import footerTemplate from './footer-template'
 export default defineConfigWithTheme<VPYevTheme>({
   title: 'Yev',
   description: "Yev's personal blog site",
+  lastUpdated: true,
   themeConfig: {
     copyright: {
       name: 'Yev Wang',

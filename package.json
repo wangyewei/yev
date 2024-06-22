@@ -8,15 +8,15 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "theme:dev": "pnpm -F=vitepress-theme-yev dev:tailwind",
-    "theme:build": "pnpm -F=vitepress-theme-yev build",
+    "theme:dev": "pnpm -F=vitepress-theme-snow dev:tailwind",
+    "theme:build": "pnpm -F=vitepress-theme-snow build",
     "dev": "run-p theme:dev docs:dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vitepress-theme-yev": "workspace:*"
+    "vitepress-theme-snow": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",

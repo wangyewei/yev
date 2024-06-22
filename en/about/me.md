@@ -2,6 +2,7 @@
 meta: true
 title: Introduce
 subTitle: About me
+lastUpdated: true
 ---
 
 ## Hello
@@ -51,3 +52,8 @@ _(?) Aware (~) Familiar (+) Proficient (++) Advanced (\*) Expert_
 ## Open To Job Opportunities
 
 [Obtain my CV.](mailto:yevwang@qq.com)
+
+<br />
+<div style="height:20px;"></div>
+
+> We will be good friends, right?
