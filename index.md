@@ -24,6 +24,12 @@ title:
 
 motto: Thirsty for knowledge, Humble as a fool.
 
+words:
+  - 生活在天空的一次停顿，世界依靠衰老维持平凡。
+  - 目睹了一切的律动，经历了游荡的人群，我走在其中，以沉重的呼吸配合步调。
+  - 灵魂的酶，像荷花。
+  - 光穿过身体的瞬间，凭借记忆覆盖记忆。
+
 socials:
     - icon: github
       href: https://github.com/wangyewei
@@ -43,17 +49,6 @@ socials:
     - icon: zhihu
       href: https://www.zhihu.com/people/wang-ye-wei-40
       iconBg: rgba(23, 114, 246)
-hero:
-  name: 'Yev'
-  text: "Yev's personal blog site"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
 
 
 ---

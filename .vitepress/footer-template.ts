@@ -14,7 +14,7 @@ export default [
       },
       {
         type: 'span',
-        text: 'Designed by Shiro'
+        text: 'Designed by '
       },
       {
         type: 'a',
