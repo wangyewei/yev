@@ -1,4 +1,4 @@
-import { VPYevTheme } from 'vitepress-theme-yev/src/index.ts'
+import { VPYevTheme } from 'vitepress-theme-snow/src/index.ts'
 
 export default [
   {
