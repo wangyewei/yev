@@ -24,31 +24,31 @@ export default defineConfigWithTheme<VPYevTheme>({
             // { title: 'Sponsor Me', path: 'sponsor' }
           ]
         },
-        {
-          title: 'Techonologies',
-          path: '/techology',
-          icon: 'FaSolidCode',
-          children: [
-            { title: 'TypeScript', path: '/typescript' },
-            { title: 'Git', path: '/git' },
-            { title: 'GIS', path: '/gis' },
-            { title: 'Digital twin', path: '/digi' },
-            { title: 'Vue', path: '/vue' }
-          ]
-        },
-        {
-          title: 'Manuscripts',
-          path: '/type',
-          icon: 'FaFilledQulliPen',
-          children: [{ title: 'Talk', path: '/diary' }]
-        },
+        // {
+        //   title: 'Techonologies',
+        //   path: '/techology',
+        //   icon: 'FaSolidCode',
+        //   children: [
+        //     { title: 'TypeScript', path: '/typescript' },
+        //     { title: 'Git', path: '/git' },
+        //     { title: 'GIS', path: '/gis' },
+        //     { title: 'Digital twin', path: '/digi' },
+        //     { title: 'Vue', path: '/vue' }
+        //   ]
+        // },
+        // {
+        //   title: 'Manuscripts',
+        //   path: '/type',
+        //   icon: 'FaFilledQulliPen',
+        //   children: [{ title: 'Talk', path: '/diary' }]
+        // },
         {
           title: 'State Of Mind',
           icon: 'FaSolidEmotion',
-          path: '/emotions/',
+          path: '/emotions',
           children: [
-            { title: 'Diary', path: '/diary' },
-            { title: 'Excerpt', path: '/excerpt' }
+            { title: 'Diary', path: '/diary' }
+            // { title: 'Excerpt', path: '/excerpt' }
           ]
         }
       ]

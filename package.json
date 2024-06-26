@@ -10,6 +10,7 @@
     "docs:preview": "vitepress preview",
     "theme:dev": "pnpm -F=vitepress-theme-snow dev:tailwind",
     "theme:build": "pnpm -F=vitepress-theme-snow build",
+    "theme:release": "pnpm -F=vitepress-theme-snow release",
     "dev": "run-p theme:dev docs:dev"
   },
   "keywords": [],
