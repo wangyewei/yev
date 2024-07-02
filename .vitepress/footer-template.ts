@@ -29,7 +29,7 @@ export default [
           {
             type: 'div',
             children: [
-              { type: 'span', text: 'Powerd by ' },
+              { type: 'span', text: 'Designed by ' },
               {
                 type: 'a',
                 props: {
