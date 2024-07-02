@@ -1,5 +1,5 @@
 import { defineConfigWithTheme } from 'vitepress'
-import { VPYevTheme } from 'vitepress-theme-yev/src/index.ts'
+import { VPYevTheme } from 'vitepress-theme-yev'
 import footerTemplate from './footer-template'
 
 // https://vitepress.dev/reference/site-config
@@ -47,7 +47,7 @@ export default defineConfigWithTheme<VPYevTheme>({
           icon: 'FaSolidEmotion',
           path: '/emotions',
           children: [
-            { title: 'Diary', path: '/diary' }
+            { title: 'predestination', path: 'zh/diary/predestination' }
             // { title: 'Excerpt', path: '/excerpt' }
           ]
         }
