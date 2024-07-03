@@ -1,9 +1,21 @@
 import { defineConfigWithTheme } from 'vitepress'
-import { VPYevTheme } from 'vitepress-theme-yev'
+// TODO: export ts interfaces
+// @ts-ignore
+import { VPSnowTheme } from 'vitepress-theme-snow'
 import footerTemplate from './footer-template'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfigWithTheme<VPYevTheme>({
+export default defineConfigWithTheme<VPSnowTheme>({
+  head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      }
+    ]
+  ],
   base: '/',
   title: 'Yev',
   description: "Yev's personal blog site",
@@ -21,35 +33,16 @@ export default defineConfigWithTheme<VPYevTheme>({
           path: '/',
           icon: 'FaSolidDotCircle',
           children: [
-            { title: 'Introduce', path: '/en/about/me' }
-            // { title: 'Sponsor Me', path: 'sponsor' }
+            { title: 'Introduce', path: '/en/about/me' },
+            { title: 'Sponsor Me', path: 'sponsor' }
           ]
         },
-        // {
-        //   title: 'Techonologies',
-        //   path: '/techology',
-        //   icon: 'FaSolidCode',
-        //   children: [
-        //     { title: 'TypeScript', path: '/typescript' },
-        //     { title: 'Git', path: '/git' },
-        //     { title: 'GIS', path: '/gis' },
-        //     { title: 'Digital twin', path: '/digi' },
-        //     { title: 'Vue', path: '/vue' }
-        //   ]
-        // },
-        // {
-        //   title: 'Manuscripts',
-        //   path: '/type',
-        //   icon: 'FaFilledQulliPen',
-        //   children: [{ title: 'Talk', path: '/diary' }]
-        // },
         {
           title: 'State Of Mind',
           icon: 'FaSolidEmotion',
           path: '/emotions',
           children: [
             { title: 'predestination', path: '/zh/diary/predestination' }
-            // { title: 'Excerpt', path: '/excerpt' }
           ]
         }
       ]
@@ -59,11 +52,11 @@ export default defineConfigWithTheme<VPYevTheme>({
         {
           name: 'About',
           links: [
-            { name: 'About this site', href: '/abouts/site' },
-            { name: 'About me', href: '/abouts/me' },
+            { name: 'About this site', href: '/about/site/' },
+            { name: 'About me', href: '/about/me' },
             {
               name: 'About this project',
-              href: 'https://github.com/wangyewei/vitepress-theme-yev'
+              href: '/en/about/project/'
             }
           ]
         },

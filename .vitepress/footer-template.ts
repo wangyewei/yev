@@ -1,4 +1,4 @@
-import { VPYevTheme } from 'vitepress-theme-snow/src/index.ts'
+import { VPSnowTheme } from 'vitepress-theme-snow/src/index.ts'
 
 export default [
   {
@@ -63,4 +63,4 @@ export default [
       }
     ]
   }
-] satisfies VPYevTheme['footer']['template']
+] satisfies VPSnowTheme['footer']['template']
