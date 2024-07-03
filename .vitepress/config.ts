@@ -4,6 +4,7 @@ import footerTemplate from './footer-template'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme<VPYevTheme>({
+  base: '/',
   title: 'Yev',
   description: "Yev's personal blog site",
   lastUpdated: true,
@@ -20,7 +21,7 @@ export default defineConfigWithTheme<VPYevTheme>({
           path: '/',
           icon: 'FaSolidDotCircle',
           children: [
-            { title: 'Introduce', path: 'en/about/me' }
+            { title: 'Introduce', path: '/en/about/me' }
             // { title: 'Sponsor Me', path: 'sponsor' }
           ]
         },
@@ -47,7 +48,7 @@ export default defineConfigWithTheme<VPYevTheme>({
           icon: 'FaSolidEmotion',
           path: '/emotions',
           children: [
-            { title: 'predestination', path: 'zh/diary/predestination' }
+            { title: 'predestination', path: '/zh/diary/predestination' }
             // { title: 'Excerpt', path: '/excerpt' }
           ]
         }
