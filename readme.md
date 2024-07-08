@@ -8,4 +8,4 @@
 
 &copy; 2024 Yev Wang rights reserved.
 
-The code licensed under the [MIT License](./LICENSE)
+The code licensed under the [MIT License](https://github.com/wangyewei/yev/blob/main/LICENSE)
