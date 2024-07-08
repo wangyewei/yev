@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite'
-import VPThemeSnowAutoArticlePlugin from './packages/vp-theme-auto-article-plugin'
+import VPThemeSnowReplaceImportPlugin from './packages/vp-theme-snow-replace-import'
+
 export default defineConfig({
   esbuild: {
     jsxFactory: 'h',
     jsxFragment: 'Fragment',
     jsxInject: "import { h } from 'vue'"
   },
-  plugins: [VPThemeSnowAutoArticlePlugin()]
+  plugins: [VPThemeSnowReplaceImportPlugin()]
 })

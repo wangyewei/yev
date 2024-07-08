@@ -33,8 +33,8 @@ export default defineConfigWithTheme<VPSnowTheme>({
           path: '/',
           icon: 'FaSolidDotCircle',
           children: [
-            { title: 'Introduce', path: '/en/about/me' },
-            { title: 'Sponsor Me', path: 'sponsor' }
+            { title: 'Introduce', path: '/en/about/me' }
+            // { title: 'Sponsor Me', path: 'sponsor' }
           ]
         },
         {
