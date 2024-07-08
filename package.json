@@ -20,7 +20,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vitepress-theme-snow": "workspace:*"
+    "@vercel/speed-insights": "^1.0.12",
+    "vitepress-theme-snow": "workspace:*",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",

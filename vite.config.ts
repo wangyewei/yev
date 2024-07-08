@@ -7,5 +7,8 @@ export default defineConfig({
     jsxFragment: 'Fragment',
     jsxInject: "import { h } from 'vue'"
   },
-  plugins: [VPThemeSnowReplaceImportPlugin()]
+  plugins: [VPThemeSnowReplaceImportPlugin()],
+  optimizeDeps: {
+    include: ['vue-router']
+  }
 })
