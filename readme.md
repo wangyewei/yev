@@ -1,6 +1,7 @@
 ## Yev's Personal Site
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/wangyewei/yev/.github%2Fworkflows%2F)
+![GitHub License](https://img.shields.io/github/license/wangyewei/yev)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/wangyewei/yev/.github%2Fworkflows%2Fci.yaml)
 
 > Based on [Vitepress-theme-snow](https://github.com/wangyewei/vitepress-theme-snow)
 
