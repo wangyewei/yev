@@ -15,7 +15,6 @@ export default function VPThemeSnowReplaceImport(
     transform(code, id) {
       if (!filter(id)) return null
 
-      // 替换 import 语句
       const newCode = code
         .replace(
           "import YevTheme from 'vitepress-theme-snow/src/index.ts'",
