@@ -23,7 +23,7 @@
     "@vercel/speed-insights": "^1.0.12",
     "gray-matter": "^4.0.3",
     "vitepress-theme-snow": "workspace:*",
-    "vue-router": "^4.4.0"
+    "vue-router": "^4.4.1"
   },
   "devDependencies": {
     "@types/node": "^20.14.11",
