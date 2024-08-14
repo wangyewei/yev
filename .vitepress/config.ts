@@ -1,6 +1,5 @@
 import { defineConfigWithTheme } from 'vitepress'
-// TODO: export ts interfaces
-// @ts-ignore
+
 import { VPSnowTheme } from 'vitepress-theme-snow'
 import footerTemplate from './footer-template'
 
@@ -47,6 +46,7 @@ export default defineConfigWithTheme<VPSnowTheme>({
         }
       ]
     },
+    articles: {},
     footer: {
       links: [
         {

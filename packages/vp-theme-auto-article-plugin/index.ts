@@ -7,6 +7,7 @@ export interface VPThemeSnowAutoArticleOptions {
   base?: string
   output?: string
   ignores?: string[]
+  inputs?: string[]
 }
 
 export type Article = {
@@ -19,21 +20,25 @@ const IGNORE_FILES_ARR = ['node_modules', '.git', '.github', '.vscode']
 export default function VPThemeSnowAutoArticlePlugin(
   options: VPThemeSnowAutoArticleOptions = {}
 ): Plugin {
-  const { base = '.', output = '.vitepress/articles.json' } = options
+  const {
+    base = '.',
+    output = '.vitepress/articles.json',
+    inputs = []
+  } = options
   let { ignores = [] } = options
   ignores = ignores.concat(IGNORE_FILES_ARR)
 
   return {
     name: 'vp-theme-snow-auto-article-plugin',
     async buildStart() {
-      const articles = await scanArticles(base, ignores)
+      const articles = await scanArticles(base, ignores, inputs)
       await fs.writeFile(output, JSON.stringify(articles, null, 2))
     },
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
         if (req.url === '/__generate_articles') {
           const articles = await scanArticles(base, ignores)
-          await fs.writeFile(output, JSON.stringify(articles, null, 2))
+          // await fs.writeFile(output, JSON.stringify(articles, null, 2))
           res.end('Articles JSON generated')
         } else {
           next()
@@ -45,7 +50,8 @@ export default function VPThemeSnowAutoArticlePlugin(
 
 async function scanArticles(
   base: string,
-  ignores: string[]
+  ignores: string[],
+  inputs?: string[]
 ): Promise<Article[]> {
   const articles: Article[] = []
 

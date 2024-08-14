@@ -10,7 +10,7 @@ export default defineConfig({
   },
   plugins: [
     VPThemeSnowReplaceImportPlugin(),
-    VPThemeSnowAutoArticlePlugin({ ignores: ['packages'] })
+    VPThemeSnowAutoArticlePlugin({ inputs: ['en'] })
   ],
   optimizeDeps: {
     include: ['vue-router']
