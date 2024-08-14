@@ -138,3 +138,5 @@ virtual-tailwind.css
 
 #
 .vitepress/articles.json
+
+.Ds_store
