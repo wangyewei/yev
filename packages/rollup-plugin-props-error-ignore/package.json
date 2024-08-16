@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "rollup-plugin-props-error-ignore",
   "version": "1.0.0",
   "main": "index.js",
