@@ -37,8 +37,7 @@ export default function VPThemeSnowAutoArticlePlugin(
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
         if (req.url === '/__generate_articles') {
-          const articles = await scanArticles(base, ignores)
-          // await fs.writeFile(output, JSON.stringify(articles, null, 2))
+          const articles = await scanArticles(base, ignores, inputs)
           res.end('Articles JSON generated')
         } else {
           next()
@@ -51,34 +50,48 @@ export default function VPThemeSnowAutoArticlePlugin(
 async function scanArticles(
   base: string,
   ignores: string[],
-  inputs?: string[]
-): Promise<Article[]> {
-  const articles: Article[] = []
+  inputs: string[]
+): Promise<Record<string, Article>> {
+  const articles: Record<string, Article> = {}
 
-  const entries = await fs.readdir(base, { withFileTypes: true })
+  for (const input of inputs) {
+    const inputPath = join(base, input)
+    const entries = await fs.readdir(inputPath, { withFileTypes: true })
+    console.log({ entries, inputPath })
+    for (const entry of entries) {
+      if (shouldSkip(entry, ignores)) continue
 
-  for (const entry of entries) {
-    const fullPath = join(base, entry.name)
-    if (shouldSkip(entry, ignores)) {
-      continue
-    }
-    if (entry.isDirectory()) {
-      const indexPath = join(fullPath, 'index.md')
-      try {
-        await fs.access(indexPath)
-        const nestedArticles = await scanArticles(fullPath, ignores)
-        articles.push(...nestedArticles)
-      } catch (err) {
-        continue
+      const fullPath = join(inputPath, entry.name)
+
+      if (entry.isDirectory()) {
+        const indexPath = join(fullPath, 'index.md')
+        try {
+          await fs.access(indexPath)
+          const nestedEntries = await fs.readdir(fullPath, {
+            withFileTypes: true
+          })
+
+          for (const nestedEntry of nestedEntries) {
+            if (nestedEntry.isFile() && nestedEntry.name.endsWith('.md')) {
+              const nestedFullPath = join(fullPath, nestedEntry.name)
+              const fileContent = await fs.readFile(nestedFullPath, 'utf-8')
+              const { data } = matter(fileContent)
+              const key = nestedFullPath
+                .replace(`${base}/`, '')
+                .replace('.md', '')
+              articles[key] = {
+                title: data.title,
+                url: data?.articlePath || key
+              }
+            }
+          }
+        } catch (err) {
+          continue
+        }
       }
-    } else if (entry.isFile() && entry.name.endsWith('.md')) {
-      const fileContent = await fs.readFile(fullPath, 'utf-8')
-      const { data } = matter(fileContent)
-      const key = entry.name.replace('.md', '')
-      articles.push({ title: data.title || key, url: fullPath })
     }
   }
-
+  console.log({ articles })
   return articles
 }
 

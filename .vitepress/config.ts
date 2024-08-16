@@ -46,7 +46,6 @@ export default defineConfigWithTheme<VPSnowTheme>({
         }
       ]
     },
-    articles: {},
     footer: {
       links: [
         {
