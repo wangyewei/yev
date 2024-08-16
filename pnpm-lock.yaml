@@ -184,6 +184,12 @@ importers:
         specifier: ^3.4.31
         version: 3.4.37(typescript@5.4.5)
 
+  packages/vp-theme-snow-plugin:
+    devDependencies:
+      vite:
+        specifier: ^5.2.11
+        version: 5.2.11(@types/node@20.14.15)
+
 packages:
 
   /@algolia/autocomplete-core@1.9.3(@algolia/client-search@4.23.3)(algoliasearch@4.23.3)(search-insights@2.13.0):

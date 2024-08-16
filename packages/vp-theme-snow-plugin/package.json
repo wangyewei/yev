@@ -1,0 +1,34 @@
+{
+  "packageManager": "pnpm@8.15.4",
+  "name": "vp-theme-snow-plugin",
+  "version": "1.0.0",
+  "description": "🚀 Core plugin for vp-theme-snow",
+  "type": "module",
+  "engines": {
+    "node": ">=18.19.0"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./*"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "vite",
+    "vitepress",
+    "plugin",
+    "typescript",
+    "vp-theme-snow",
+    "rollup"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.2.11"
+  }
+}

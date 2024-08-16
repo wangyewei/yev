@@ -1,0 +1,4 @@
+- [ ] process the `.vitepress/article.json`
+  - [ ] Read it in dev
+- [ ] Extract this repo be a submodule in `yev`
+- [ ] Publish this plugin to npm
