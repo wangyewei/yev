@@ -24,5 +24,7 @@ export function resolveAlias(): AliasOptions {
     }))
   ]
 
+  console.log({ alias })
+
   return alias
 }

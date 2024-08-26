@@ -57,7 +57,7 @@ async function scanArticles(
   for (const input of inputs) {
     const inputPath = join(base, input)
     const entries = await fs.readdir(inputPath, { withFileTypes: true })
-    console.log({ entries, inputPath })
+
     for (const entry of entries) {
       if (shouldSkip(entry, ignores)) continue
 
@@ -91,7 +91,6 @@ async function scanArticles(
       }
     }
   }
-  console.log({ articles })
   return articles
 }
 
