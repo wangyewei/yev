@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@vercel/speed-insights':
         specifier: ^1.0.12
-        version: 1.0.12(vue-router@4.4.3(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))
+        version: 1.0.12(vue-router@4.4.5(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -18,8 +18,8 @@ importers:
         specifier: workspace:*
         version: link:packages/theme
       vue-router:
-        specifier: ^4.4.2
-        version: 4.4.3(vue@3.4.37(typescript@5.4.5))
+        specifier: ^4.4.5
+        version: 4.4.5(vue@3.4.37(typescript@5.4.5))
     devDependencies:
       '@types/node':
         specifier: ^22.5.0
@@ -1339,8 +1339,8 @@ packages:
   '@vue/compiler-ssr@3.4.37':
     resolution: {integrity: sha512-TyAgYBWrHlFrt4qpdACh8e9Ms6C/AZQ6A6xLJaWrCL8GCX5DxMzxyeFAEMfU/VFr4tylHm+a2NpfJpcd7+20XA==}
 
-  '@vue/devtools-api@6.6.3':
-    resolution: {integrity: sha512-0MiMsFma/HqA6g3KLKn+AGpL1kgKhFWszC9U29NfpWK5LE7bjeXxySWJrOJ77hBz+TBrBQ7o4QJqbPbqbs8rJw==}
+  '@vue/devtools-api@6.6.4':
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
 
   '@vue/devtools-api@7.2.0':
     resolution: {integrity: sha512-92RsjyH9WKNFO6U/dECUMakq4dm2CeqEDJYLJ8wZ81AnCifpXE7d4jPIjK34ENsPaapA6BSfIZdH/qzLOHiepA==}
@@ -3070,8 +3070,8 @@ packages:
       '@vue/composition-api':
         optional: true
 
-  vue-router@4.4.3:
-    resolution: {integrity: sha512-sv6wmNKx2j3aqJQDMxLFzs/u/mjA9Z5LCgy6BE0f7yFWMjrPLnS/sPNn8ARY/FXw6byV18EFutn5lTO6+UsV5A==}
+  vue-router@4.4.5:
+    resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -4049,10 +4049,10 @@ snapshots:
 
   '@types/web-bluetooth@0.0.20': {}
 
-  '@vercel/speed-insights@1.0.12(vue-router@4.4.3(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))':
+  '@vercel/speed-insights@1.0.12(vue-router@4.4.5(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))':
     optionalDependencies:
       vue: 3.4.37(typescript@5.4.5)
-      vue-router: 4.4.3(vue@3.4.37(typescript@5.4.5))
+      vue-router: 4.4.5(vue@3.4.37(typescript@5.4.5))
 
   '@vitejs/plugin-vue@5.0.4(vite@5.2.11(@types/node@22.5.0))(vue@3.4.37(typescript@5.4.5))':
     dependencies:
@@ -4189,7 +4189,7 @@ snapshots:
       '@vue/compiler-dom': 3.4.37
       '@vue/shared': 3.4.37
 
-  '@vue/devtools-api@6.6.3': {}
+  '@vue/devtools-api@6.6.4': {}
 
   '@vue/devtools-api@7.2.0(vue@3.4.37(typescript@5.4.5))':
     dependencies:
@@ -6211,9 +6211,9 @@ snapshots:
     dependencies:
       vue: 3.4.37(typescript@5.4.5)
 
-  vue-router@4.4.3(vue@3.4.37(typescript@5.4.5)):
+  vue-router@4.4.5(vue@3.4.37(typescript@5.4.5)):
     dependencies:
-      '@vue/devtools-api': 6.6.3
+      '@vue/devtools-api': 6.6.4
       vue: 3.4.37(typescript@5.4.5)
 
   vue@3.4.37(typescript@5.4.5):
