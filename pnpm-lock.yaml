@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@vercel/speed-insights':
-        specifier: ^1.0.12
-        version: 1.0.12(vue-router@4.4.5(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))
+        specifier: ^1.0.13
+        version: 1.0.13(vue-router@4.4.5(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -1234,13 +1234,13 @@ packages:
   '@types/web-bluetooth@0.0.20':
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
 
-  '@vercel/speed-insights@1.0.12':
-    resolution: {integrity: sha512-ZGQ+a7bcfWJD2VYEp2R1LHvRAMyyaFBYytZXsfnbOMkeOvzGNVxUL7aVUvisIrTZjXTSsxG45DKX7yiw6nq2Jw==}
+  '@vercel/speed-insights@1.0.13':
+    resolution: {integrity: sha512-3iuOMB/M0WE3Zeuoo2mnlD7Eo7fGH7RBGi92Vq4qO7Kp+BwNbpwFqkjuPQDEeBxoGQLJFRICrsx5/IluHZVCZA==}
     peerDependencies:
       '@sveltejs/kit': ^1 || ^2
       next: '>= 13'
       react: ^18 || ^19
-      svelte: ^4
+      svelte: '>= 4'
       vue: ^3
       vue-router: ^4
     peerDependenciesMeta:
@@ -4033,7 +4033,7 @@ snapshots:
 
   '@types/web-bluetooth@0.0.20': {}
 
-  '@vercel/speed-insights@1.0.12(vue-router@4.4.5(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))':
+  '@vercel/speed-insights@1.0.13(vue-router@4.4.5(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))':
     optionalDependencies:
       vue: 3.4.37(typescript@5.4.5)
       vue-router: 4.4.5(vue@3.4.37(typescript@5.4.5))

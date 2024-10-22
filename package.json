@@ -20,7 +20,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@vercel/speed-insights": "^1.0.12",
+    "@vercel/speed-insights": "^1.0.13",
     "gray-matter": "^4.0.3",
     "vitepress-theme-snow": "workspace:*",
     "vue-router": "^4.4.5"
