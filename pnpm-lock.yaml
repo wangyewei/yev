@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@vercel/speed-insights':
         specifier: ^1.0.12
-        version: 1.0.12(vue-router@4.4.5(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))
+        version: 1.0.12(vue-router@4.5.0(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -18,8 +18,8 @@ importers:
         specifier: workspace:*
         version: link:packages/theme
       vue-router:
-        specifier: ^4.4.5
-        version: 4.4.5(vue@3.4.37(typescript@5.4.5))
+        specifier: ^4.5.0
+        version: 4.5.0(vue@3.4.37(typescript@5.4.5))
     devDependencies:
       '@types/node':
         specifier: ^22.7.5
@@ -3054,8 +3054,8 @@ packages:
       '@vue/composition-api':
         optional: true
 
-  vue-router@4.4.5:
-    resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
+  vue-router@4.5.0:
+    resolution: {integrity: sha512-HDuk+PuH5monfNuY+ct49mNmkCRK4xJAV9Ts4z9UFc4rzdDnxQLyCMGGc8pKhZhHTVzfanpNwB/lwqevcBwI4w==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -4033,10 +4033,10 @@ snapshots:
 
   '@types/web-bluetooth@0.0.20': {}
 
-  '@vercel/speed-insights@1.0.12(vue-router@4.4.5(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))':
+  '@vercel/speed-insights@1.0.12(vue-router@4.5.0(vue@3.4.37(typescript@5.4.5)))(vue@3.4.37(typescript@5.4.5))':
     optionalDependencies:
       vue: 3.4.37(typescript@5.4.5)
-      vue-router: 4.4.5(vue@3.4.37(typescript@5.4.5))
+      vue-router: 4.5.0(vue@3.4.37(typescript@5.4.5))
 
   '@vitejs/plugin-vue@5.0.4(vite@5.2.11(@types/node@22.7.5))(vue@3.4.37(typescript@5.4.5))':
     dependencies:
@@ -6172,7 +6172,7 @@ snapshots:
     dependencies:
       vue: 3.4.37(typescript@5.4.5)
 
-  vue-router@4.4.5(vue@3.4.37(typescript@5.4.5)):
+  vue-router@4.5.0(vue@3.4.37(typescript@5.4.5)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.4.37(typescript@5.4.5)
